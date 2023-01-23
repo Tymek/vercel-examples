@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/examples-ui": "latest",
+    "@unleash/nextjs": "^0.0.6",
+    "@vercel/examples-ui": "^1.0.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
