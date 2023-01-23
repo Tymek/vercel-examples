@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import { Page, Text } from '@vercel/examples-ui'
+import { Link, Page, Text } from '@vercel/examples-ui'
 import { useFlag, useVariant } from '@unleash/nextjs'
 import { Toggle } from './Toggle'
 
@@ -33,6 +33,9 @@ export const SimplePage: FC<{ children?: ReactNode }> = ({ children }) => {
         )
       )}
       {children}
+      <div className="pt-8">
+        <Link href="/">Go back</Link>
+      </div>
     </Page>
   )
 }

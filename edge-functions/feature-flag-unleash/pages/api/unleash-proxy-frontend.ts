@@ -4,7 +4,7 @@ import { type Context, randomSessionId, evaluateFlags } from '@unleash/nextjs'
 import { UNLEASH_COOKIE_NAME, UNLEASH_API_PROXY_DEFINITIONS } from '../../utils'
 
 export const config = {
-  runtime: 'edge',
+  runtime: 'experimental-edge',
 }
 
 export default async function handler(req: NextRequest) {
