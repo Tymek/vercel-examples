@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app'
 import type { LayoutProps } from '@vercel/examples-ui/layout'
-
-import { getLayout, Layout as DefaultLayout } from '@vercel/examples-ui'
+import { getLayout } from '@vercel/examples-ui'
 
 import '@vercel/examples-ui/globals.css'
 
@@ -12,7 +11,9 @@ function App({ Component, pageProps }: AppProps) {
     <Layout
       title="feature-flag-unleash"
       path="edge-functions/feature-flag-unleash"
-      description="feature-flag-unleash"
+      deployButton={{
+        env: ['UNLEASH_PROXY_SECRET', 'UNLEASH_BASE_URL', 'UNLEASH_API_TOKEN'],
+      }}
     >
       <Component {...pageProps} />
     </Layout>

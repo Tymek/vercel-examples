@@ -1,6 +1,17 @@
-# feature-flag-unleash example
+---
+name: Feature flags with Unleash
+slug: feature-flag-unleash
+description: Set up Unleash Proxy for use in Middleware and Server Side Rendering.
+framework: Next.js
+useCase: Edge Functions
+css: Tailwind
+deployUrl: https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/edge-functions/feature-flag-unleash&env=UNLEASH_PROXY_SECRET,UNLEASH_BASE_URL,UNLEASH_API_TOKEN&project-name=feature-flag-unleash&repository-name=feature-flag-unleash
+demoUrl: https://feature-flag-unleash.vercel.app
+---
 
-This example shows how -------------------------
+# Feature Flags with Unleash
+
+Setting up Unleash Proxy on Vercel Edge Functions. It puts the load of getting feature flag definitions on Edge Network Cache, decreasing traffic to the Unleash instance. This example does not cover Static Generation, which is another way of scaling your application.
 
 ## Demo
 
